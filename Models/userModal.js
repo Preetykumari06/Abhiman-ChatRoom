@@ -34,19 +34,3 @@ const UserModel = sequelize.define('User', {
 
 module.exports = UserModel;
 
-// register
-// {
-//     "userId":"",
-//     "deviceId": "123456789ABCDEF",
-//     "name": "John",
-//     "phone": "1237897890",
-//     "password": "12345",
-//     "availCoins": 0,
-//     "prime": true
-// }
-
-// login
-// {
-//     "userId": "2",
-//     "password": "12345"
-//   }
