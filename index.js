@@ -4,7 +4,7 @@ require('dotenv').config();
 const cors = require('cors');
 const { userRouter } = require('./Routes/userRouter');
 const { chatRoomRouter } = require('./Routes/roomRouter');
-
+const { messageRouter } = require('./Routes/messageRouter');
 
 const port = process.env.PORT || 8080;
 
@@ -14,6 +14,7 @@ app.use(cors());
 
 app.use("/api",userRouter);
 app.use("/api",chatRoomRouter);
+app.use("/api", messageRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello, Welcome to Chat App!');
