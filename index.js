@@ -3,7 +3,8 @@ const sequelize = require('./Config/db');
 require('dotenv').config();
 const cors = require('cors');
 const { userRouter } = require('./Routes/userRouter');
-const { chatRoomRouter } = require('./Routes/chatRoomRouter');
+const { chatRoomRouter } = require('./Routes/roomRouter');
+
 
 const port = process.env.PORT || 8080;
 
