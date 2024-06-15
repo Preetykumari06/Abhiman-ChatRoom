@@ -11,17 +11,7 @@ Abhiman-ChatRoom is a chat room application that allows users to register, log i
 
 * Request Body
   The request body should be a JSON object containing the following fields:
-
-
-|Field	  |Type	  |Description                                       |
-|--------------------------------------------------------------------|
-|name	    |String	|User's full name.                                 |
-|userId	  |String	|Unique identifier for the user (e.g., email).     |
-|password	|String	|Password for the user's account.                  |
-|phone	  |String	|User's contact number (must be exactly 10 digits).|
-|deviceId	|String	|Unique identifier for the user's device.          |
-
-* Example
+  
   JSON
   {
     "userId": "",
@@ -43,24 +33,19 @@ Abhiman-ChatRoom is a chat room application that allows users to register, log i
 * Request Body
   The request body should be a JSON object containing the following fields:
 
-Field	Type	Description
-userId	String	Unique identifier for the user (e.g., email).
-password	String	Password for the user's account.
-
-* Example
-JSON
-{
+  JSON
+  {
     "userId": "2",
     "password": "12345"
-}
+  }
 
 * Response
   Upon successful login, the server will respond with a JSON object containing a JWT token.
 
-JSON
-{
+  JSON
+  {
   "token": "jwt token"
-}
+  }
 
 
 This README file provides the necessary details for registering and logging in users in the Abhiman-ChatRoom application. Adjust the endpoints, request body fields, and example responses to your specific implementation.
