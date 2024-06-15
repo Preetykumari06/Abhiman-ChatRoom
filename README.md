@@ -12,12 +12,14 @@ Abhiman-ChatRoom is a chat room application that allows users to register, log i
 * Request Body
   The request body should be a JSON object containing the following fields:
 
-Field	Type	Description
-name	String	User's full name.
-userId	String	Unique identifier for the user (e.g., email).
-password	String	Password for the user's account.
-phone	String	User's contact number (must be exactly 10 digits).
-deviceId	String	Unique identifier for the user's device.
+
+|Field	  |Type	  |Description                                       |
+|--------------------------------------------------------------------|
+|name	    |String	|User's full name.                                 |
+|userId	  |String	|Unique identifier for the user (e.g., email).     |
+|password	|String	|Password for the user's account.                  |
+|phone	  |String	|User's contact number (must be exactly 10 digits).|
+|deviceId	|String	|Unique identifier for the user's device.          |
 
 * Example
   JSON
