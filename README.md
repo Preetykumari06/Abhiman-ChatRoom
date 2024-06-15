@@ -5,6 +5,7 @@ Abhiman-ChatRoom is a chat room application that allows users to register, log i
 * User Register API
   Endpoint
   POST /api/register
+  URL :  https://abhiman-chatroom.onrender.com/api/register
 
 * Description
   This endpoint allows a new user to register by providing necessary user information.
@@ -36,6 +37,7 @@ JSON
 * User Login API
   Endpoint
   POST /api/login
+  URL :  https://abhiman-chatroom.onrender.com/api/login
 
 * Description
   This endpoint allows an existing user to log in by providing their user credentials.
@@ -55,6 +57,6 @@ JSON
 
 This README file provides the necessary details for registering and logging in users in the Abhiman-ChatRoom application. Adjust the endpoints, request body fields, and example responses to your specific implementation.
 
-
+Deployed URL : https://abhiman-chatroom.onrender.com/
 
 
