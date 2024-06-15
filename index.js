@@ -29,11 +29,13 @@ Chatroom.belongsTo(User, {
   onDelete: "CASCADE",
   onUpdate: "CASCADE",
 });
+
 User.hasMany(Chatroom, { foreignKey: "creatorId" });
 User.belongsToMany(Chatroom, { through: UserChatroom });
 Chatroom.belongsToMany(User, { through: UserChatroom });
 UserChatroom.hasMany(Message, { onDelete: "CASCADE" });
 Message.belongsTo(UserChatroom);
+
 
 app.get('/', (req, res) => {
   res.send('Hello, Welcome to Chat App!');

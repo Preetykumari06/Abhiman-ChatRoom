@@ -29,4 +29,5 @@ const UserChatroom = sequelize.define("user_chatroom", {
   },
 });
 
+
 module.exports = UserChatroom;

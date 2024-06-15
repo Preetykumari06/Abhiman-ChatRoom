@@ -7,5 +7,6 @@ messageRouter.post("/", authenticate, saveMessage);
 messageRouter.get("/:userChatroomId", authenticate, recieveAllMessge);
 
 
+
 module.exports = {messageRouter}
 
